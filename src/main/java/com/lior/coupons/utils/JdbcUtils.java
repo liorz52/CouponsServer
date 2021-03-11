@@ -16,6 +16,8 @@ public class JdbcUtils {
 
 	public static Connection getConnection() throws SQLException {
 
+		// AN IMPORTANT REMINDER : MUST CHANGE HOST NAME BEFORE RELEASING PRODUCTION
+		// localhost MUST be replaced with the DB ip address
 		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/coupons?serverTimezone=UTC&useSSL=false", "root",
 				"LL00LL11");
 

@@ -28,6 +28,10 @@ public class CouponsApi {
 	@Autowired
 	CouponsController couponsController;
 
+
+	
+	// Example : http://localhost:8080/coupons
+	// Method : POST 
 	@PostMapping
 	public long creatCoupon(@RequestBody CouponDto coupon, HttpServletRequest request) throws ApplicationException {
 		UserLoginData userLoginData= (UserLoginData) request.getAttribute("userLoginData");
